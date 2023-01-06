@@ -1,18 +1,32 @@
 <script>
-import PageTitle from './components/PageTitle.vue';
+import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
+
 
 export default {
   components: {
-    PageTitle
+   AppHeader,
+   AppMain,
+   AppFooter
   }
 }
 </script>
 
 <template>
   <div>
-    <PageTitle/>
+    <div>
+      <AppHeader />
+      <AppMain />
+      <AppFooter />
+    </div>
   </div>
 </template>
 
-<style scoped>
+<style >
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 </style>
